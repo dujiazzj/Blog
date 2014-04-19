@@ -5,8 +5,8 @@ layout: nil
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>独嘉的成长之路</title>
-    <link>www.dujia0517.com</link>
-    <atom:link href="www.dujia0517.com/rss.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.dujia0517.com</link>
+    <atom:link href="http://www.dujia0517.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>独嘉的成长之路</description>
     <language>zh-cn</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,10 +15,10 @@ layout: nil
     {% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title }}</title>
-      <link>www.dujia0517.com{{ post.url }}</link>
+      <link>http://www.dujia0517.com{{ post.url }}</link>
       <pubDate>{{ post.date | date_to_string }}</pubDate>
       <author>独嘉</author>
-      <guid>www.dujia0517.com{{ post.id }}</guid>
+      <guid>http://www.dujia0517.com{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
